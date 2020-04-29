@@ -6,7 +6,7 @@ RUN apt-get update && \
     unzip \
     && apt-get clean
 
-RUN wget https://minecraft.azureedge.net/bin-linux/bedrock-server-1.14.60.5.zip --output bedrock-server.zip && unzip bedrock-server.zip -d bedrock-server && rm bedrock-server.zip
+RUN curl https://minecraft.azureedge.net/bin-linux/bedrock-server-1.14.60.5.zip --output bedrock-server.zip && unzip bedrock-server.zip -d bedrock-server && rm bedrock-server.zip
 
 WORKDIR /bedrock-server
 ENV LD_LIBRARY_PATH=.

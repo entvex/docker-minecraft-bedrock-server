@@ -1,2 +1,2 @@
-# minecraft-bedrock-server
+# docker-minecraft-bedrock-server
 Containerized Minecraft Bedrock Linux Server

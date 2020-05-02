@@ -4,7 +4,8 @@ RUN apt-get update && \
   DEBIAN_FRONTEND=noninteractive apt-get install -y \
     curl \
     unzip \
-    && apt-get clean
+    && apt-get clean \
+    apt-get autoremove
 
 # Default minecraft bedrock port
 EXPOSE 19132/udp
